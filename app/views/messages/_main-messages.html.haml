@@ -1,0 +1,46 @@
+.main-messages-header
+  .main-messages-header__left-box
+    .main-messages-header__left-box--top
+      グループ名
+    .main-messages-header__left-box--bottom
+      %ul
+        Member:
+        %li 
+          メンバー名１
+        %li
+          メンバー名２
+  .main-messages-header__right-box
+    = link_to root_path do
+      Edit
+.main-messages-content
+  .main-messages-content__box
+    .main-messages-content__box--upper
+      .main-messages-content__box--upper--left
+        田中太郎
+      .main-messages-content__box--upper--right
+        2020-07-01
+    .main-messages-content__box--bottom
+      テキスト。おはようございます。お元気ですか。よろしくお願い致します。雨が強いようですね。今後ともよろしくお願い致します。
+  .main-messages-content__box
+    .main-messages-content__box--upper
+      .main-messages-content__box--upper--left
+        田中太郎
+      .main-messages-content__box--upper--right
+        2020-07-01
+    .main-messages-content__box--bottom
+      テキスト
+  .main-messages-content__box
+    .main-messages-content__box--upper
+      .main-messages-content__box--upper--left
+        田中太郎
+      .main-messages-content__box--upper--right
+        2020-07-01
+    .main-messages-content__box--bottom
+      テキスト
+.main-messages-form
+  .main-messages-form__left
+    .input-box
+  .main-messages-form__right
+    .submit-btn
+      =link_to root_path do
+        送信
