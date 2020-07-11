@@ -11,13 +11,10 @@
           = icon('fas', 'cog')
 .side-messages-content
   .side-messages-content__group
-    .side-messages-content__group--title
-      グループ名
-    .side-messages-content__group--chat
-      グループコンテンツ
-      
-  .side-messages-content__group
-    .side-messages-content__group--title
-      グループ名2
-    .side-messages-content__group--chat
-      グループコンテンツ2
+    - current_user.groups.each do |group|
+      .side-messages-content__group--title
+        = link_to "#" do
+          = group.name
+        .side-messages-content__group--chat
+          メッセージはまだありません
+            
