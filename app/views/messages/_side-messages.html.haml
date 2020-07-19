@@ -13,8 +13,7 @@
   .side-messages-content__group
     - current_user.groups.each do |group|
       .side-messages-content__group--title
-        = link_to "#" do
-          = group.name
-        .side-messages-content__group--chat
-          メッセージはまだありません
-            
+        = link_to group_messages_path(group) do
+          .side-messages-content__group--title
+            = group.name
+          .side-messages-content__group--chat
